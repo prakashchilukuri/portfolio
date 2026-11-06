@@ -4,9 +4,9 @@ import { EASE, SectionHeading, Tilt } from './fx';
 
 export default function About() {
   const facts = [
-    { k: 'Now', v: 'B.Tech, AI & ML', s: `${education[0].school} · ${education[0].score}` },
-    { k: 'Training', v: `${experience[0].role}, ${experience[0].company}`, s: experience[0].period },
-    { k: 'Primary language', v: 'Java', s: 'with Python, C, C++' },
+    { k: 'Now', v: 'B.Tech, CSE', s: `${education[0].school} · 2023–2027` },
+    { k: 'Experience', v: `${experience[0].role}, ${experience[0].company}`, s: experience[0].period },
+    { k: 'Primary language', v: 'Python', s: 'with Java, C, SQL' },
     { k: 'Based in', v: profile.location, s: 'India' },
   ];
 
@@ -39,7 +39,7 @@ export default function About() {
                 <p className="text-[10px] font-bold tracking-[0.3em] text-crimson-2">STARRING</p>
                 <p className="font-display text-3xl leading-none text-bone">{profile.displayName}</p>
               </div>
-              <span className="rounded border border-white/30 px-1.5 text-[10px] font-bold text-bone">S01–S05</span>
+              <span className="rounded border border-white/30 px-1.5 text-[10px] font-bold text-bone">S01–S06</span>
             </div>
           </div>
         </Tilt>
