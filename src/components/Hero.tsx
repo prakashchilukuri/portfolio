@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
-import { achievements, certifications, education, profile, projects, type ProfileId } from '../data/portfolio';
+import { achievements, certifications, profile, projects, type ProfileId } from '../data/portfolio';
 import { useFinePointer } from '../hooks/useMedia';
 import { useSmoothScroll } from '../hooks/smoothScroll';
 import { EASE, Magnetic, Particles } from './fx';
@@ -37,7 +37,6 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
   const meta = [
-    '2023 – Present',
     'B.Tech CSE',
     `${projects.length} Originals`,
     `${certifications.length} Certifications`,
