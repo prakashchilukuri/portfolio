@@ -55,6 +55,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     if (locks.current === 0) {
       lenisRef.current?.start();
       document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
     }
   }, []);
 

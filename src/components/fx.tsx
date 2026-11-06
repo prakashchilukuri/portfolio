@@ -166,6 +166,10 @@ export function Particles({ count = 46, color = '255,90,110', className = '' }: 
     const tick = (now: number) => {
       const dt = Math.min(50, now - last);
       last = now;
+      if (w <= 0 || h <= 0) {
+        raf = requestAnimationFrame(tick);
+        return;
+      }
       ctx.clearRect(0, 0, w, h);
       for (const d of dots) {
         d.x += d.vx * dt;
