@@ -1,5 +1,5 @@
 {
-  "name": "sushmita-the-series",
+  "name": "prakash-the-series",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -16,11 +16,13 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@imgly/background-removal-node": "^1.4.5",
     "@tailwindcss/vite": "4.1.4",
     "@types/react": "18.3.20",
     "@types/react-dom": "18.3.6",
     "@vitejs/plugin-react": "4.4.1",
-    "sharp": "0.34.1",
+    "pdf-parse": "^2.4.5",
+    "sharp": "^0.34.5",
     "tailwindcss": "4.1.4",
     "typescript": "5.8.3",
     "vite": "6.3.5"
